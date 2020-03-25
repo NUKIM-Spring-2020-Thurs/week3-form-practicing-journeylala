@@ -17,13 +17,10 @@ $comment=$_POST["comment"];
  echo "你的生日:".$bd."<br/>";
  echo "你來自何方:".$city."<br/>";
  echo "你的飲食習慣:".$eathabbit."<br/>";
- //echo "如何知道高大資管營:".$information."<br/>"; 
- echo "何時抵達:".$arrivetime."<br/>";
- //echo nl2br($comment)."<br/>";
- echo nl2br(htmlspecialchars($comment))."<br/>";
+
 
  $personalitynum=count($personality);
- echo $personalitynum;
+ //echo $personalitynum."<br/>";
  
 
  for($i=0;$i<$personalitynum;$i++)
@@ -31,7 +28,7 @@ $comment=$_POST["comment"];
      echo "你的個性:".$personality[$i]."<br/>";
  }
 
- $informationNO=count($information);
+ $informationNO=count($information)."<br/>";
  //for($j=0;$j<$informationNO;$j++)
  //{
    // echo "如何知道高大資管營:" .$information[$j]."<br/>";
@@ -42,4 +39,8 @@ $comment=$_POST["comment"];
     echo "如何知道高大資管營:" .$value."<br/>";
  }
 
+  //echo "如何知道高大資管營:".$information."<br/>"; 
+  echo "何時抵達:".$arrivetime."<br/>";
+  //echo nl2br($comment)."<br/>";
+  echo "想說的話".nl2br(htmlspecialchars($comment))."<br/>";
  ?>
